@@ -37,7 +37,7 @@ services:
       args:
         - PHP_VERSION=${PHP_VERSION}
     container_name: ${APP_NAME}-www
-    command: ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+    #command: ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
     tty: true
     links:
       - db:${DB_PROVIDER}

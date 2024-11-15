@@ -63,7 +63,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
-      - ${PMA_PORT}:8080
+      - ${PMA_PORT}:8084
     networks:
       net: 
         ipv4_address: 172.21.1.12
